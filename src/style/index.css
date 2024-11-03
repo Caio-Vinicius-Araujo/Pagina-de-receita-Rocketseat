@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+}
+
+body {
+  background-image: url(/src/img/bg.svg);
+  background-size: cover;
+}
+
 :root {
   /* Surface colors */
   --background-color: #573824;
@@ -6,4 +16,141 @@
   --text-color-primary: #291b1a;
   --text-color-secondary: #573a37;
   --text-color-on-bg: #f0e8c2;
+}
+
+#Page {
+  display: flex;
+  width: 50rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 3rem auto;
+  background-color: var(--surface-color);
+  border-radius: 1rem;
+}
+
+#Page img {
+  border-radius: 1rem;
+}
+
+main {
+  display: flex;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+#About h1 {
+  color: var(--text-color-primary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 140%; /* 56px */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.info p {
+  color: var(--text-color-secondary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+#Ingredientes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+#Ingredientes h2 {
+  color: var(--text-color-primary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+ul {
+  width: 44rem;
+  height: 21rem;
+
+  color: var(--text-color-secondary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+#Preparation-method {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+#Preparation-method h2 {
+  color: var(--text-color-primary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+#Preparation-method p {
+  color: var(--text-color-secondary);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+#Creditos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#Creditos p {
+  color: var(--text-color-on-bg);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+#Creditos p img {
+  vertical-align: middle;
 }
